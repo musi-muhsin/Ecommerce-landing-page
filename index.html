@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ecommerce Landing Page</title>
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <!-- bootsrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- remix icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css"/>
+    <!-- swiper js  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+  </head>
+  <body>
+
+    <!-- header  -->
+    <header>
+        <div class="bg-dark py-2">
+            <div class="container px-md-">
+                <div class="d-flex justify-content-end gap-3">
+                    <button class="btn btn-outline-light btn-login fw-light fs-12 rounded-0 px-4  ">Login</button>
+                    <button class="btn btn-outline-light fw-light fs-12 rounded-0 border-0 d-none d-md-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <g clip-path="url(#clip0_211_2406)">
+                              <path d="M3 6.9999V4.3699C3.00781 3.85293 3.11755 3.34258 3.32294 2.8681C3.52832 2.39362 3.82532 1.96433 4.1969 1.60482C4.56848 1.24531 5.00735 0.962663 5.48836 0.77306C5.96936 0.583458 6.48306 0.490631 7 0.499899V0.499899C7.51694 0.490631 8.03064 0.583458 8.51164 0.77306C8.99265 0.962663 9.43152 1.24531 9.8031 1.60482C10.1747 1.96433 10.4717 2.39362 10.6771 2.8681C10.8824 3.34258 10.9922 3.85293 11 4.3699V6.9999" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M1 5H2C2.13261 5 2.25979 5.05268 2.35355 5.14645C2.44732 5.24021 2.5 5.36739 2.5 5.5V8.5C2.5 8.63261 2.44732 8.75979 2.35355 8.85355C2.25979 8.94732 2.13261 9 2 9H1C0.734784 9 0.48043 8.89464 0.292893 8.70711C0.105357 8.51957 0 8.26522 0 8V6C0 5.73478 0.105357 5.48043 0.292893 5.29289C0.48043 5.10536 0.734784 5 1 5V5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M12.5 9.5H11.5C11.3674 9.5 11.2402 9.44732 11.1464 9.35355C11.0527 9.25979 11 9.13261 11 9V6C11 5.86739 11.0527 5.74021 11.1464 5.64645C11.2402 5.55268 11.3674 5.5 11.5 5.5H12.5C12.7652 5.5 13.0196 5.60536 13.2071 5.79289C13.3946 5.98043 13.5 6.23478 13.5 6.5V8.5C13.5 8.76522 13.3946 9.01957 13.2071 9.20711C13.0196 9.39464 12.7652 9.5 12.5 9.5V9.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M9 12.25C9.53043 12.25 10.0391 12.0393 10.4142 11.6642C10.7893 11.2891 11 10.7804 11 10.25V8" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M9 12.25C9 12.5815 8.8683 12.8995 8.63388 13.1339C8.39946 13.3683 8.08152 13.5 7.75 13.5H6.25C5.91848 13.5 5.60054 13.3683 5.36612 13.1339C5.1317 12.8995 5 12.5815 5 12.25C5 11.9185 5.1317 11.6005 5.36612 11.3661C5.60054 11.1317 5.91848 11 6.25 11H7.75C8.08152 11 8.39946 11.1317 8.63388 11.3661C8.8683 11.6005 9 11.9185 9 12.25Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_211_2406">
+                                <rect width="14" height="14" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          Help center
+                    </button>
+                    <button class="btn btn-outline-light fw-light fs-12 rounded-0 px-2 border-0 d-none d-md-flex align-items-center gap-2 ">
+                      English
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 18 18" fill="none">
+                        <path d="M8.99989 12.5624C8.85059 12.5631 8.7073 12.5036 8.60239 12.3974L2.60239 6.39739C2.39587 6.17575 2.40196 5.83038 2.61617 5.61617C2.83038 5.40196 3.17575 5.39587 3.39739 5.60239L8.99989 11.2049L14.6024 5.60239C14.824 5.39587 15.1694 5.40196 15.3836 5.61617C15.5978 5.83038 15.6039 6.17575 15.3974 6.39739L9.39739 12.3974C9.29247 12.5036 9.14919 12.5631 8.99989 12.5624Z" fill="white"/>
+                      </svg>
+                    </button>
+
+                </div>
+            </div>
+         </div>
+        <div class="container-fluid px-md-5">
+            <div class=" d-flex align-items-center justify-content-between py-4 py-md-3">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" class="w-100" alt="">
+                </div>
+                <div class="left d-none d-md-flex align-items-center gap-5 ">
+                    <a href="#">Women</a>
+                    <a href="#">Men</a>
+                    <a href="#">About</a>
+                    <a href="#">Everworld Stores</a>
+                </div>
+                <div class="right d-none d-md-flex align-items-center gap-4">
+                    <a href="#"><i class="ri-search-line"></i></a>
+                    <a href="#"><i class="ri-notification-2-line"></i></a>
+                    <a href="#"><i class="ri-shopping-cart-2-line"></i></a>
+                </div>
+                <!-- humberger menu  -->
+                    <div class="background  d-md-none" onclick="openMenu()">
+                        <button class="menu__icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </button>
+                      </div>
+            </div>
+            <!-- mobile menu  -->
+        <div class="mobilemenubar" id="mobilemenubar">
+            <div class=" d-flex justify-content-end align-items-center">
+                <button onclick="closeMenu()" class="arrow text-dark rounded-pill">
+                    <i class="ri-close-fill fs-4 fw-bolder fs-4 "></i>
+                </button>
+            </div>
+            <div class="text-center py-3">
+                <img src="./assets/images/logo.png" class="w-50 mb-5" alt="">
+            </div>
+            <div class="menus d-flex flex-column align-items-center gap-3">
+                <a href="#" class="p-3 text-dark fw-medium fs-6">Women</a>
+                <a href="#" class="p-3 text-dark fw-medium fs-6">Men</a>
+                <a href="#" class="p-3 text-dark fw-medium fs-6">About</a>
+                <a href="#" class="p-3 text-dark fw-medium fs-6">Everworld Stores</a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- content  -->
+
+<div class="content">
+ <!-- section one  -->
+ <section class="section-one">
+    <div class="container-fluid px-md-5">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+           <h4 class="text-white">Todays Deal</h4>
+           <a href="#" class="text-white d-flex align-items-center gap-1">View more <i class="ri-arrow-right-s-line fs-5"></i></a>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="./assets/images/section-one/img1.png" class="w-100 mb-3" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/section-one/img2.png" class="w-100 mb-3" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/section-one/img3.png" class="w-100 mb-3" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- section two  -->
+<section class="section-two">
+  <div class="container-fluid px-md-5">
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-inner">
+            <!-- item 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-md-6 my-auto">
+                    <div  class="text-start ps-md-5 ms-5 ">
+                        <h3 class="fw-bolder mb-3">Starting   1,999</h3>
+                        <h5 class="mb-3">Bluetooth calling Smartwatches</h5>
+                        <button class="btn btn-light rounded-0">Pay on Delivery</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assets/images/section-two/img1.png" class="w-100" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- item 2 -->
+          <div class="carousel-item">
+            <div class="carousel-caption">
+                <div class="row">
+                  <div class="col-md-6 my-auto">
+                      <div  class="text-start ps-md-5 ms-5 ">
+                          <h3 class="fw-bolder mb-3">Starting   1,999</h3>
+                          <h5 class="mb-3">Bluetooth calling Smartwatches</h5>
+                          <button class="btn btn-light">Pay on Delivery</button>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <img src="./assets/images/section-two/img1.png" class="w-100" alt="">
+                  </div>
+                </div>
+              </div>
+          </div>
+            <!-- item 3 -->
+          <div class="carousel-item">
+            <div class="carousel-caption">
+                <div class="row">
+                  <div class="col-md-6 my-auto">
+                      <div  class="text-start ps-md-5 ms-5 ">
+                          <h3 class="fw-bolder mb-3">Starting   1,999</h3>
+                          <h5 class="mb-3">Bluetooth calling Smartwatches</h5>
+                          <button class="btn btn-light">Pay on Delivery</button>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <img src="./assets/images/section-two/img1.png" class="w-100" alt="">
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- arrows -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+</section>
+
+<!-- section three  -->
+<section class="section-three">
+  <div class="container-fluid px-md-5">
+     <div class="row">
+        <div class="col-md-6">
+            <!-- top seller  -->
+            <h4 class="fw-semibold mb-3">Top sellers</h4>
+            <div class="sellers custom-scrollbar mb-3">
+                <div class="d-flex flex-column align-items-center gap-1">
+                    <div class="position-relative">
+                        <img src="./assets/images/section-three/img1.png" class="brand-img" alt="">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <span class="brand-name">Philips</span>
+                </div>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <div class="position-relative">
+                        <img src="./assets/images/section-three/img2.png" class="brand-img" alt="">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <span class="brand-name">Anouk</span>
+                </div>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <div class="position-relative">
+                        <img src="./assets/images/section-three/img3.png" class="brand-img" alt="">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <span class="brand-name">Max</span>
+                </div>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <div class="position-relative">
+                        <img src="./assets/images/section-three/img4.png" class="brand-img" alt="">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <span class="brand-name">Trends</span>
+                </div>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <div class="position-relative">
+                        <img src="./assets/images/section-three/img5.png" class="brand-img" alt="">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <span class="brand-name">Taavi</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- top brands  -->
+            <h4 class="fw-semibold mb-3">Top Brands</h4>
+            <div class="sellers custom-scrollbar mb-3">
+                <div class="d-flex flex-column align-items-center gap-1">
+                    <div class="position-relative">
+                        <img src="./assets/images/section-three/img1.png" class="brand-img" alt="">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <span class="brand-name">Philips</span>
+                </div>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <div class="position-relative">
+                        <img src="./assets/images/section-three/img6.png" class="brand-img" alt="">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <span class="brand-name">Puma</span>
+                </div>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <div class="position-relative">
+                        <img src="./assets/images/section-three/img7.png" class="brand-img" alt="">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <span class="brand-name">Adidas</span>
+                </div>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <div class="position-relative">
+                        <img src="./assets/images/section-three/img4.png" class="brand-img" alt="">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <span class="brand-name">Trends</span>
+                </div>
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <div class="position-relative">
+                        <img src="./assets/images/section-three/img5.png" class="brand-img" alt="">
+                        <i class="ri-verified-badge-fill"></i>
+                    </div>
+                    <span class="brand-name">Taavi</span>
+                </div>
+            </div>
+        </div>
+     </div>
+  </div>
+</section>
+
+<!-- section four  -->
+<section cass="section-four">
+   <div class="container-fluid px-md-5">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <h4 class="fw-semibold mb-0">New Products</h4>
+        <div class="d-flex align-items-center gap-2">
+            <span class="swiper-button-prev"></span>
+            <span class="swiper-button-next"></span>
+        </div>
+    </div>
+      <div class="swiper swiper-slider">
+        <div class="swiper-wrapper">
+            <!-- category one  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img1.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Pants</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category two  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img2.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Shoe</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category three  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img3.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Jeans</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category four  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img4.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Watch</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category five  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img5.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Shoe</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category six  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img6.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Watch</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category seven  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img4.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">pants</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+   </div>
+</section>
+
+<!-- section five  -->
+<section class="section-five">
+   <div class="container-fluid px-md-5">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <h4 class="fw-semibold mb-0">Featured Products</h4>
+        <div class="d-flex align-items-center gap-2">
+            <div class="swiper-two-button-prev"></div>
+            <div class=" swiper-two-button-next"></div>
+        </div>
+    </div>
+      <div class="swiper swiper-two ">
+        <div class="swiper-wrapper">
+            <!-- category one  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img1.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Pants</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category two  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img2.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Shoe</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category three  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img3.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Jeans</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category four  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img4.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Watch</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category five  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img5.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Shoe</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category six  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img6.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">Watch</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+            <!-- category seven  -->
+            <div class="swiper-slide ">
+                <img class=" w-100" src="./assets/images/section-four/img4.png" alt="Swiper">
+                <div class="p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2  ">
+                        <h5 class="mb-0">pants</h5>
+                        <h6 class="text-black-50 mb-0">₹3999</h6>
+                      </div>
+                      <div class="d-flex align-items-center gap-1">
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-fill"></i>
+                          <i class="ri-star-line"></i>
+                          <i class="ri-star-line"></i>
+                          <p class="mb-0">(3)</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+   </div>
+</section>
+
+
+
+<!-- section seven  -->
+<section class="section-six">
+   <div class="container-fluid px-md-5">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <h4 class="fw-semibold mb-0">Featured categories</h4>
+        <a href="#" class="view-more d-flex align-items-center ">
+          <p class="mb-0 d-none d-md-block">View all Categories</p>
+          <i class="ri-arrow-right-s-line fs-5 arrow text-white"></i>
+        </a>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="position-relative mb-4">
+                <img src="./assets/images/section-six/img1.png" class="w-100" alt="">
+                <div class="d-flex flex-column position-absolute top-0 p-3">
+                    <h5 class="text-white mb-3 fw-semibold">Woman Fashion & <br>
+                        Clothing</h5>
+                        <a href="#" class="arrow bg-white rounded-pill"><i class="ri-arrow-right-s-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="position-relative mb-4">
+                <img src="./assets/images/section-six/img2.png" class="w-100" alt="">
+                <div class="d-flex flex-column position-absolute top-0 p-3">
+                    <h5 class="text-white mb-3 fw-semibold">Kids & Toys <br>
+                        </h5>
+                        <a href="#" class="arrow bg-white rounded-pill"><i class="ri-arrow-right-s-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="position-relative ">
+            <img src="./assets/images/section-six/img3.png" class="w-100" alt="">
+               <div class="position-absolute top-50 p-3 p-md-5 " style=" transform: translate(0, -50%);">
+                <h3 class="text-white mb-md-3 fw-semibold">   For your little</h3>
+                <h1 class="fw-semibold big-text mb-md-3">SUPERHEROES</h1>
+                <a href="#" class="arrow bg-white rounded-pill"><i class="ri-arrow-right-s-line text-dark"></i></a>
+               </div>
+             
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+
+<!-- footer  -->
+<section class="footer">
+    <div class="container-fluid px-md-5 ">
+       <div class="row">
+        <div class="col-md-3">
+            <h6 class="mb-3">COMPANY INFO</h6>
+            <div class="d-flex flex-column ">
+                <a href="#" class="text-dark fs-14 mb-2">Support policy page</a>
+                <a href="#" class="text-dark fs-14 mb-2">Return policy page</a>
+                <a href="#" class="text-dark fs-14 mb-2">About us</a>
+                <a href="#" class="text-dark fs-14 mb-2">Privacy policy page</a>
+                <a href="#" class="text-dark fs-14 mb-2">Seller policy</a>
+                <a href="#" class="text-dark fs-14 mb-2">Terms condition page</a>
+            </div>
+           
+        </div>
+        <div class="col-md-3">
+            <h6 class="mb-3">CONTACT</h6>
+            <div>
+                <p class="fw-semibold mb-1 fs-14">Address</p>
+                <p class="mb-2 fs-14">Demo</p>
+            </div>
+            <div>
+                <p class="fw-semibold mb-1 fs-14">Phone</p>
+                <p class="mb-2 fs-14">7878657754</p>
+            </div>
+            <div>
+                <p class="fw-semibold mb-1 fs-14">Email</p>
+                <p class="mb-2 fs-14">company@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <h6 class="mb-3">MY ACCOUNT</h6>
+            <div class="d-flex flex-column">
+                <a href="#" class="text-dark fs-14 mb-2">Login</a>
+                <a href="#" class="text-dark fs-14 mb-2">Order history</a>
+                <a href="#" class="text-dark fs-14 mb-2">My wishlist</a>
+                <a href="#" class="text-dark fs-14 mb-2">Track order</a>
+                <a href="#" class="text-dark fs-14 mb-2">Seller policy</a>
+                <a href="#" class="text-dark fs-14 mb-2">Be an affiliate partner</a>
+            </div>
+           
+        </div>
+        <div class="col-md-3">
+            <h6 class="mb-3">Socials</h6>
+            <div class="d-flex align-items-center gap-3 mb-4">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="37" viewBox="0 0 43 44" fill="none">
+                        <g clip-path="url(#clip0_211_2559)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4815 1.01416C25.3337 1.05812 28.8137 2.00485 31.9216 3.85437C34.9924 5.66695 37.5469 8.23706 39.3407 11.3189C41.179 14.4455 42.12 17.9466 42.1638 21.8222C42.0547 27.1249 40.3821 31.6539 37.1463 35.4093C33.9104 39.1647 29.766 41.4879 25.4758 42.3786V27.5114H29.5319L30.4491 21.669H24.3073V17.8423C24.2732 17.049 24.5241 16.2697 25.0146 15.6453C25.5057 15.0192 26.3707 14.6901 27.6094 14.658H31.3182V9.54018C31.265 9.52306 30.7601 9.45536 29.8034 9.33707C28.7184 9.21012 27.6273 9.14232 26.5349 9.13395C24.0626 9.14536 22.1073 9.84276 20.669 11.2262C19.2307 12.6092 18.496 14.6101 18.4649 17.2289V21.669H13.7909V27.5114H18.4649V42.3786C13.1971 41.4879 9.05271 39.1647 5.81683 35.4093C2.58095 31.6539 0.908503 27.1249 0.799316 21.8222C0.843001 17.9464 1.78401 14.4453 3.62235 11.3189C5.41621 8.23706 7.97071 5.66696 11.0416 3.85437C14.1494 2.00521 17.6294 1.05847 21.4815 1.01416Z" fill="#1F2937"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_211_2559">
+                            <rect width="42.7333" height="42.7333" fill="white" transform="translate(0.183105 0.366699)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 44 44" fill="none">
+                        <g clip-path="url(#clip0_211_2561)">
+                          <path d="M21.6499 0.366699C9.85119 0.366699 0.283203 9.93469 0.283203 21.7334C0.283203 33.532 9.85119 43.1 21.6499 43.1C33.4486 43.1 43.0165 33.532 43.0165 21.7334C43.0165 9.93469 33.4486 0.366699 21.6499 0.366699ZM31.4056 17.0262C31.4151 17.2364 31.4197 17.4477 31.4197 17.66C31.4197 24.1404 26.4868 31.6134 17.4659 31.6137H17.4663H17.4659C14.6963 31.6137 12.1191 30.8019 9.94867 29.4107C10.3324 29.456 10.723 29.4785 11.1185 29.4785C13.4163 29.4785 15.5309 28.6947 17.2097 27.3792C15.0628 27.3394 13.2527 25.9215 12.628 23.9729C12.927 24.0302 13.2344 24.0615 13.5497 24.0615C13.9973 24.0615 14.4309 24.0012 14.843 23.8887C12.599 23.4395 10.9085 21.4562 10.9085 19.0814C10.9085 19.0593 10.9085 19.0394 10.9092 19.0188C11.57 19.3863 12.3258 19.6073 13.1304 19.6321C11.8136 18.7535 10.948 17.2514 10.948 15.5499C10.948 14.6514 11.1908 13.8095 11.6121 13.0848C14.0306 16.0523 17.6449 18.0039 21.7209 18.209C21.6368 17.8497 21.5935 17.4754 21.5935 17.0907C21.5935 14.3834 23.7899 12.1869 26.4983 12.1869C27.909 12.1869 29.1831 12.7832 30.0781 13.7365C31.1954 13.5161 32.2445 13.1079 33.1923 12.5462C32.8255 13.6909 32.0483 14.6514 31.0356 15.2587C32.0277 15.1401 32.9732 14.877 33.8518 14.4864C33.1956 15.47 32.3632 16.334 31.4056 17.0262Z" fill="#1F2937"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_211_2561">
+                            <rect width="42.7333" height="42.7333" fill="white" transform="translate(0.283203 0.366699)"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 44 44" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7496 17.0609C24.6391 17.0609 26.9815 19.367 26.9815 22.2118C26.9815 25.056 24.6391 27.3622 21.7496 27.3622C18.8601 27.3622 16.5178 25.056 16.5178 22.2118C16.5178 19.367 18.8602 17.0609 21.7496 17.0609ZM21.7496 15.0012C17.7044 15.0012 14.425 18.2293 14.425 22.2118C14.425 26.1937 17.7044 29.4224 21.7496 29.4224C25.7949 29.4224 29.0742 26.1937 29.0742 22.2118C29.0742 18.2293 25.795 15.0012 21.7496 15.0012ZM29.3004 13.2678C28.8943 13.2742 28.4991 13.4004 28.1646 13.6307C27.83 13.8609 27.5709 14.1849 27.4199 14.562C27.2689 14.939 27.2327 15.3523 27.3158 15.7498C27.3989 16.1474 27.5977 16.5115 27.8871 16.7965C28.1766 17.0814 28.5438 17.2744 28.9426 17.3513C29.3414 17.4282 29.754 17.3856 30.1287 17.2287C30.5033 17.0718 30.8232 16.8076 31.0482 16.4695C31.2732 16.1313 31.3932 15.7342 31.3932 15.3281C31.3888 14.7774 31.1659 14.251 30.7734 13.8646C30.381 13.4782 29.8511 13.2636 29.3004 13.2678ZM16.6369 11.0256H26.8624C30.189 11.0256 32.8857 13.6803 32.8857 16.9547V27.4683C32.8857 30.7433 30.189 33.3975 26.8624 33.3975H16.6369C13.3103 33.3975 10.6136 30.7433 10.6136 27.4683V16.9547C10.6136 13.6803 13.3103 11.0256 16.6369 11.0256ZM15.6725 8.97499C11.7184 8.97499 8.51297 12.1307 8.51297 16.023V28.4C8.51297 32.2929 11.7184 35.448 15.6725 35.448H27.8268C31.7809 35.448 34.9863 32.2929 34.9863 28.4V16.023C34.9863 12.1307 31.7809 8.97499 27.8268 8.97499H15.6725ZM21.7496 1.5293C33.1721 1.5293 42.4319 10.7887 42.4319 22.2118C42.4319 33.6343 33.1722 42.8937 21.7496 42.8937C10.3271 42.8937 1.06738 33.6343 1.06738 22.2118C1.06738 10.7888 10.3271 1.5293 21.7496 1.5293Z" fill="#1F2937"/>
+                      </svg>
+                </a>
+            </div>
+            <p class="mb-3 fs-14">Subscribe to our newsletter for regular update about offers, coupons & 
+                more</p>
+                <div class="d-flex align-items-center gap-2">
+                    <input type="text" class="form-control rounded-0" name="" id="">
+                    <button class="btn btn-dark fs-14 rounded-0">Subscribe</button>
+                </div>
+            
+        </div>
+       </div>
+    </div>
+</section>
+    </div>
+   
+    <!-- bootstrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- custom script  -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
